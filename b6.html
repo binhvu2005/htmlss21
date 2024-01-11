@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let diemToan = parseFloat(prompt("Nhập điểm môn Toán:"));
+      let diemVan = parseFloat(prompt("Nhập điểm môn Văn:"));
+      let diemAnh = parseFloat(prompt("Nhập điểm môn Anh:"));
+
+      if (!isNaN(diemToan) && !isNaN(diemVan) && !isNaN(diemAnh)) {
+        let diemTrungBinh = (diemToan + diemVan + diemAnh) / 3;
+
+        let xepLoai;
+        if (diemTrungBinh >= 8.0 && diemTrungBinh <= 10) {
+          xepLoai = "GIỎI";
+        } else if (diemTrungBinh >= 6.5 && diemTrungBinh <= 7.9) {
+          xepLoai = "KHÁ";
+        } else if (diemTrungBinh >= 5.0 && diemTrungBinh <= 6.4) {
+          xepLoai = "TRUNG BÌNH";
+        } else {
+          xepLoai = "YẾU";
+        }
+        document.write('điểm trung bình: '+diemTrungBinh.toFixed(2)+'<br> xếp loại: '+xepLoai)
+      } else {
+        document.write("Điểm nhập vào không hợp lệ. Hãy nhập số.");
+      }
+    </script>
+  </body>
+</html>

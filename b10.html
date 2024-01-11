@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ví dụ if else  -->
+    <script>
+        let age = +prompt('nhập tuổi của bạn:')
+   
+        if (!isNaN(age)) {
+            document.write('bạn này '+ age+ '  tuổi')
+        }else{
+            document.write('không hợp lệ')
+        }
+    </script>
+    <!-- ví dụ swich case -->
+    <script>
+        let soNhapVao = parseInt(prompt("Nhập vào một số (từ 2 đến 8):"));
+      if (!isNaN(soNhapVao) && soNhapVao >= 2 && soNhapVao <= 8) {
+        let ngayTrongTuan;
+        switch (soNhapVao) {
+            case 2:
+                ngayTrongTuan = "Monday";
+                break;
+            case 3:
+                ngayTrongTuan = "Tuesday";
+                break;
+            case 4:
+                ngayTrongTuan = "Wednesday";
+                break;
+            case 5:
+                ngayTrongTuan = "Thursday";
+                break;
+            case 6:
+                ngayTrongTuan = "Friday";
+                break;
+            case 7:
+                ngayTrongTuan = "Saturday";
+                break;
+            case 8:
+                ngayTrongTuan = "Sunday";
+                break;
+        }
+        document.write(ngayTrongTuan)
+    } else {
+        document.write("Số nhập vào không hợp lệ. Hãy nhập số từ 2 đến 8.");
+    }
+    
+  </script>
+</body>
+</html>
+<!--
+                                           so sánh if else và swich case
+                  if                                                 swich
+    -Có thể sử dụng để so sánh lớn hơn, nhỏ hơn,..   |   -Chỉ có thể sử dụng để so sánh bằng, hoặc khác nhau
+    -Mỗi câu lệnh if có một biểu thức điều kiện, với |   -Tất cả các trường hợp (case) đều so sánh với 
+     giá trị trả về là true hoặc false               |    giá trị của biểu thức điều kiện duy nhất
+    -Biểu thức điều kiện cần trả về giá trị kiểu     |   -Biểu thức điều kiện cần trả về giá trị là kiểu 
+    boolean                                          |    byte, short, char, int hoặc string
+    -Chỉ có một khối lệnh được thực thi nếu điều     |   -Nếu điều kiện đúng mà không có câu lệnh 
+     kiện đúng                                       |    break thì tất cả các khối lệnh ở phía sau cũng 
+                                                     |    được thực thi                                                                         
+-->

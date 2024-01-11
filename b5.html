@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+          let a = parseInt(prompt("nhập tháng"));
+        if (!isNaN(a) && a >= 1 && a <= 12) {
+          if(a==1||a==3||a==5||a==7||a==8||a==10||a==12){
+            document.write('có 31 ngày')
+          }else if(a==2){
+            document.write('có 28 hoặc 29 ngày')
+          }else{
+            document.write('có 30ngày')
+          }
+          
+      } else {
+          document.write("Số nhập vào không hợp lệ. Hãy nhập số từ 2 đến 8.");
+      }
+      
+    </script>
+  </body>
+</html>

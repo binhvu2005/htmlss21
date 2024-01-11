@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = +prompt();
+      let b = +prompt();
+      let c = +prompt();
+      if (!isNaN(a) && !isNaN(c) && !isNaN(b)) {
+        var max = (a > b ? a : b) > c ? (a > b ? a : b) : c;
+        var min = (a < b ? a : b) < c ? (a < b ? a : b) : c;
+        document.write(min + ' ' + ((a+b+c)-max-min) +' '+ max);
+      } else {
+        document.write("không hợp lệ");
+      }
+    </script>
+  </body>
+</html>
